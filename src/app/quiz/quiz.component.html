@@ -1,0 +1,42 @@
+<div class="quiz-page">
+
+    <div class="card" style="width: 65rem;">
+
+        <div class="card-body">
+            <h5 class="card-title">
+                <span>
+                    Question {{index}} of {{TotalQtns}}
+                </span>
+                <span class="score">
+                   Score : {{index}}
+                </span>
+            </h5>
+
+
+        </div>
+        <div class="card-body">
+            <p class="card-text question-style">{{startQtn.questionText}}</p>
+        </div>
+        <ul class="list-group list-group-flush" *ngFor="let option of startQtn.options; let i=index">
+            <li class="list-group-item">{{i+1}} ) {{option.optionText}}</li>
+
+        </ul>
+        <div class="card-body">
+            <p> <button (click)="navigateToNextQtn()">Next Question</button></p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- <form class="registarion-form">
+            <div class="header">Header</div>
+            <input type="text" placeholder="Email Id" />
+            <input type="text" placeholder="Username" />
+            <input type="password" placeholder="Password" />
+            <input type="password" placeholder="Confirm password" />
+            <button>Save</button>
+
+        </form> -->

@@ -64,6 +64,12 @@
     display: none;
 }
 
+.quiz-page {
+    max-width: 1000px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+
 .container {
     position: relative;
     z-index: 1;

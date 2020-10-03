@@ -1,0 +1,14 @@
+.header {
+    width: 500px;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 2px;
+}
+
+.question-style {
+    font-weight: bold;
+}
+
+.score {
+    float: right;
+}
